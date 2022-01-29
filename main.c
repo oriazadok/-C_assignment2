@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include "my_mat.h"
 
-
 int main() {
+
+    int mat[N][N] = { 0 };
+    //int temp[N][N] = { 0 }; // 不用这个矩阵
 
     char ch;
 
@@ -12,13 +14,13 @@ int main() {
 
         switch(ch) {
             case 'A':
-                initGraph();
+                initGraph(mat);
                 break;
             case 'B':
-                iaRoute();
+                iaRoute(mat);
                 break;
             case 'C':
-                route();
+                route(mat);
                 break;
             case 'D':
                 break;
